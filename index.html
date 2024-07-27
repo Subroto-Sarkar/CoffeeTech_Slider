@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CoffeeTech Slider</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="https://malsup.github.io/jquery.cycle.all.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1> CoffeeTech </h1>
+            <div class="slider">
+                <img src="img/slide1.jpg" width="640" height="426">
+                <img src="img/slide2.jpg" width="640" height="426">
+                <img src="img/slide3.jpg" width="640" height="426">
+                <img src="img/slide4.jpg" width="640" height="426">
+                <img src="img/slide5.jpg" width="640" height="426">
+            </div>
+
+            <ul id="nav">
+                <li id="prev"><a href="#"><i class="bi bi-arrow-left"></i></a></li>
+                <li id="next"><a href="#"><i class="bi bi-arrow-right"></i></a></li>
+            </ul>
+        </div>
+        <br><br>
+        
+
+        <script>
+            $(document).ready(function() {
+                $('.slider').cycle({
+                    fx: 'shuffle',
+                    pause: 1,
+                    prev: '#prev',
+                    next: '#next'
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,66 @@
+* {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+body {
+    background: linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    color: #666666;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.container {
+    width: 635px;
+    margin: 100px auto 0 auto;
+    position: relative;
+}
+
+.slider {
+    height: 332px;
+}
+
+.slider img {
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+}
+
+ul#nav {
+    list-style-type: none;
+    z-index: 150;
+}
+
+ul#nav li a {
+    display: block;
+    width: 58px;
+    height: 102px;
+    outline: none;
+    color: inherit; /* Ensures the icon inherits the text color */
+    font-size: 48px; /* Adjust icon size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#prev a {
+    position: absolute;
+    top: 240px;
+    left: -70px;
+}
+
+#next a {
+    position: absolute;
+    top: 240px;
+    right: -110px;
+}
+
+#prev a:hover, #next a:hover {
+    color: #666666;
+}
